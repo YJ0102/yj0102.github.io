@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yejin Yoon — Product Designer, Clinical UX & Interaction</title>
+    <!-- Google Fonts: Newsreader & Playfair Display for balanced Ogg style serif italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261031e">
+</head>
+
+<body class="main">
+
+    <!-- Translucent Header Navigation (Pill Buttons) -->
+    <header class="navheader">
+        <div class="left_nav_links">
+            <a href="#work" class="nav-pill nav-link active" data-target="work">Work</a>
+            <a href="#archive" class="nav-pill nav-link" data-target="archive">Archive</a>
+        </div>
+        <div class="right_nav_links">
+            <a href="#" class="nav-pill nav-link" data-target="about-detail">Information</a>
+            <a href="yejinyoon-cv.pdf" target="_blank" class="nav-pill nav-link">Résumé</a>
+        </div>
+    </header>
+
+    <!-- Main View Scroll Container -->
+    <main id="main-view">
+        <!-- Main Page Stardust Particle Canvas -->
+        <canvas id="stardust-canvas"></canvas>
+
+        <!-- Hero Panel (Serif font applied strictly to requested entities) -->
+        <section id="home" class="panel hero-panel">
+            <h1 class="h1">
+                <span>Yejin</span> is a Seoul-based product designer working at the intersection of medical XR, human factors, and high-stakes clinical environments. Currently, she designs SW/HW interfaces for surgical simulation and clinical UX at 
+                <span class="ogg">Seoul National University Hospital’s Department of Convergence Medicine</span>, building VR training systems and MR tools used across peri-, intra-, and post-operative care, with a growing interest in human–robot interaction in surgery. She is pursuing a master’s in 
+                <span class="ogg">Smart Experience Design</span> at 
+                <span class="ogg">Kookmin University</span> and a regulatory science (RA) certification, moving toward design grounded in medical device safety and regulation.
+            </h1>
+            
+            <div class="panel arrow">
+                <a href="#work" class="link_button_scroll nav-link" data-target="work">
+                    <span class="text-block-3">Scroll for work</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Works Section (Horizontal Row Projects) -->
+        <section id="work" class="panel works">
+            <!-- Project 1: MR Physician Assistant -->
+            <a href="#" class="workssection top project-card" data-id="mr-physician">
+                <div class="projecttitlediv">
+                    <div class="projecttitledivdiv">
+                        <div class="projecttitle">MR Physician</div>
+                        <div class="projecttag">VISIONOS</div>
+                        <div class="projecttag">SPATIAL UI</div>
+                        <div class="projecttag">SURGICAL WORKFLOW</div>
+                    </div>
+                </div>
+                <div class="projectdescdiv">
+                    <div class="projectdescription">
+                        A touch-free Apple Vision Pro assistant that brings imaging, patient data, and checklists into the surgeon’s view across pre-, intra-, and post-operative care.
+                    </div>
+                </div>
+                <div class="projectimagediv">
+                    <img src="images/thumbnail-mrphysicianassist.png" alt="MR Physician Assistant" class="image" loading="eager">
+                </div>
+            </a>
+
+            <!-- Project 2: LAPA VR (XR Surgical Simulator) -->
+            <a href="#" class="workssection project-card" data-id="xr-surgical">
+                <div class="projecttitlediv">
+                    <div class="projecttitledivdiv">
+                        <div class="projecttitle">LAPA VR</div>
+                        <div class="projecttag">SPATIAL UI</div>
+                        <div class="projecttag">SURGICAL SIM</div>
+                        <div class="projecttag">CLINICAL UX</div>
+                    </div>
+                </div>
+                <div class="projectdescdiv">
+                    <div class="projectdescription">
+                        A VR surgical simulator that breaks laparoscopic cholecystectomy into guided, step-by-step tasks, so trainees can rehearse the procedure safely and repeatedly.
+                    </div>
+                </div>
+                <div class="projectimagediv">
+                    <img src="images/thumbnail-xrsurgicalsim.jpg" alt="XR Surgical Simulator" class="image" loading="eager">
+                </div>
+            </a>
+
+            <!-- Project 3: MR Health Checkup System -->
+            <a href="#" class="workssection project-card" data-id="mr-health">
+                <div class="projecttitlediv">
+                    <div class="projecttitledivdiv">
+                        <div class="projecttitle">MR Health Check</div>
+                        <div class="projecttag">PREVENTIVE CARE</div>
+                        <div class="projecttag">BEHAVIORAL UX</div>
+                        <div class="projecttag">VISION PRO</div>
+                    </div>
+                </div>
+                <div class="projectdescdiv">
+                    <div class="projectdescription">
+                        A mixed reality health-screening questionnaire on Apple Vision Pro, designed to make patients’ self-reports more accurate and less burdensome than conventional forms.
+                    </div>
+                </div>
+                <div class="projectimagediv">
+                    <img src="images/thumbnail-mrhealthcheck.png" alt="MR Health Checkup System" class="image" loading="eager">
+                </div>
+            </a>
+
+        </section>
+
+        <!-- Additional Work -->
+        <section id="ongoing" class="panel additional-section">
+            <div class="invisibleworksection">
+                <div class="additionalsectiontitle">Additional Work <span class="section-note">· Unpublished</span></div>
+            </div>
+            <div class="publist">
+                <div class="pubrow">
+                    <div class="pubtype">Design System</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">XR Design System &amp; UX Guidelines</div>
+                        <div class="pubdesc">A shared visual language, component library, and UX guidelines for the lab’s XR products, built to keep interfaces consistent and speed up development across teams.</div>
+                    </div>
+                    <div class="pubvenue">Design Ops</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Design System</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Onboarding-to-Offboarding Module</div>
+                        <div class="pubdesc">A reusable module deployed across the lab’s XR systems to shorten first-time users’ learning curve, guiding them from entering the experience to leaving it.</div>
+                    </div>
+                    <div class="pubvenue">XR · Usability</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Clinical Tool</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Photo-based Volume Tracking for Plastic Surgery</div>
+                        <div class="pubdesc">An outpatient support tool that estimates soft-tissue volume change from simple clinical photos, helping clinicians track how much volume has decreased between visits.</div>
+                        <div class="pubwith">With SNUH Department of Plastic and Reconstructive Surgery</div>
+                    </div>
+                    <div class="pubvenue">Plastic Surgery</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Rapid Deployment Aortic Valve Replacement (RDAVR) VR</div>
+                        <div class="pubdesc">A step-by-step procedural VR simulator for rapid deployment aortic valve replacement, iterated through pilot usability testing.</div>
+                        <div class="pubwith">With SNUH Department of Thoracic and Cardiovascular Surgery</div>
+                    </div>
+                    <div class="pubvenue">Cardiothoracic Surgery</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Cardiopulmonary Bypass (CPB) VR</div>
+                        <div class="pubdesc">A procedural VR simulator for training the cardiopulmonary bypass workflow.</div>
+                        <div class="pubwith">With SNUH Department of Thoracic and Cardiovascular Surgery</div>
+                    </div>
+                    <div class="pubvenue">Cardiothoracic Surgery</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">TMJ Arthroscopy VR</div>
+                        <div class="pubdesc">A VR training system for temporomandibular joint arthroscopy, pairing virtual procedures with 3D-printed physical instruments.</div>
+                        <div class="pubwith">With Department of Oral and Maxillofacial Surgery, Seoul National University Dental Hospital</div>
+                    </div>
+                    <div class="pubvenue">Oral &amp; Maxillofacial Surgery</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Intern Emergency Response VR</div>
+                        <div class="pubdesc">Scenario-based VR training for SNUH interns on in-hospital emergencies such as anaphylaxis and oxygen desaturation.</div>
+                        <div class="pubwith">With Office of Medical Education, Seoul National University College of Medicine</div>
+                    </div>
+                    <div class="pubvenue">Medical Education</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Neonatal Resuscitation (NRP) VR</div>
+                        <div class="pubdesc">A VR system for practicing the stepwise Neonatal Resuscitation Program protocol.</div>
+                        <div class="pubwith">With SNUH Department of Pediatrics</div>
+                    </div>
+                    <div class="pubvenue">Neonatology</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Training Simulator</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Surgical Hand Scrub VR</div>
+                        <div class="pubdesc">A VR education system for surgical hand scrubbing, evaluated through a randomized controlled trial.</div>
+                        <div class="pubwith">With SNUH Department of Pediatric Surgery</div>
+                    </div>
+                    <div class="pubvenue">Surgical Education</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Assessment</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Metaverse-based Medical Licensing Examination</div>
+                        <div class="pubdesc">A VR system for assessing clinical performance in the national medical licensing examination within a metaverse environment.</div>
+                        <div class="pubwith">With Office of Medical Education, Seoul National University College of Medicine</div>
+                    </div>
+                    <div class="pubvenue">Medical Education</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Service Design</div>
+                    <div class="pubmain">
+                        <div class="pubtitle">Perioperative Service Design Workshop</div>
+                        <div class="pubdesc">Facilitated a service design workshop with SNUH researchers to surface and discuss problems across pre-, intra-, and post-operative care.</div>
+                    </div>
+                    <div class="pubvenue">Workshop</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Presentations -->
+        <section id="publications" class="panel additional-section">
+            <div class="invisibleworksection">
+                <div class="additionalsectiontitle">Publications &amp; Presentations</div>
+            </div>
+            <div class="publist">
+                <div class="pubrow">
+                    <div class="pubtype">Journal Article</div>
+                    <div class="pubmain">
+                        <a class="pubtitle" href="https://doi.org/10.3946/kjme.2025.151" target="_blank" rel="noopener">Metaverse-based Objective Structured Clinical Examinations: An Exploratory Approach to Advancing Clinical Competency Assessment <span class="openarrow">↗</span></a>
+                        <div class="pubauthors">Y.-J. Huh, J.S. Shin, N. Yoon, J.W. Kim, D.H. Kim, C. Kim, S. Jeong, <strong>Y. Yoon</strong>, S. Shin, H.-J. Kong, S.J. Myung</div>
+                    </div>
+                    <div class="pubvenue">Korean Journal of Medical Education<br>38(2), 2026</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Extended Abstract</div>
+                    <div class="pubmain">
+                        <a class="pubtitle" href="https://doi.org/10.1145/3772363.3798638" target="_blank" rel="noopener">A Virtual Reality Health Screening Questionnaire: An Exploratory Comparison with Tablet-Based Questionnaire <span class="openarrow">↗</span></a>
+                        <div class="pubauthors">K. Kim, <strong>Y. Yoon</strong>, P. Thamjamrassri, Y. Kong, Y. Choi, E.K. Choe, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">ACM CHI EA ’26</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Adjunct Paper</div>
+                    <div class="pubmain">
+                        <a class="pubtitle" href="https://ieeexplore.ieee.org/document/11236233" target="_blank" rel="noopener">A Hand-Gesture-Free Natural User Interface Using 3D Manipulator Widgets for Mixed Reality Surgical Applications <span class="openarrow">↗</span></a>
+                        <div class="pubauthors">K. Kim, <strong>Y. Yoon</strong>, S. Lee, K.E. Lee, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">IEEE ISMAR-Adjunct 2025</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Poster</div>
+                    <div class="pubmain">
+                        <a class="pubtitle pub-poster" href="posters/poster-rdavr-cde2026.jpg" target="_blank" rel="noopener" data-poster="posters/poster-rdavr-cde2026.jpg" data-title="Usability Evaluation of a Virtual Reality Simulator for Rapid Deployment Aortic Valve Replacement Training: A Pilot Study" data-category="CDE 2026 · Poster">Usability Evaluation of a Virtual Reality Simulator for Rapid Deployment Aortic Valve Replacement Training: A Pilot Study <span class="openarrow poster-icon">⊕</span></a>
+                        <div class="pubauthors"><strong>Y. Yoon</strong>, K. Kim, Y. Kang, K.H. Kim, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">CDE 2026</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Poster</div>
+                    <div class="pubmain">
+                        <a class="pubtitle pub-poster" href="posters/poster-lapa-cde2026.jpg" target="_blank" rel="noopener" data-poster="posters/poster-lapa-cde2026.jpg" data-title="Technical Validation of a Virtual Reality-Based Laparoscopic Cholecystectomy Simulator: Focusing on the Gallbladder Interaction Module" data-category="CDE 2026 · Poster">Technical Validation of a Virtual Reality-Based Laparoscopic Cholecystectomy Simulator: Focusing on the Gallbladder Interaction Module <span class="openarrow poster-icon">⊕</span></a>
+                        <div class="pubauthors"><strong>Y. Yoon</strong>, Y. Choi, S. Jeong, J.K. Youn, D.Y. Ju, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">CDE 2026</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Poster</div>
+                    <div class="pubmain">
+                        <a class="pubtitle" href="https://doi.org/10.3233/SHTI251322" target="_blank" rel="noopener">Usability of Virtual Reality based Bathroom Safety Education System for Dementia Caregivers: A Nielsen Heuristics Approach <span class="openarrow">↗</span></a>
+                        <div class="pubauthors">Y. Choi, P. Thamjamrassri, <strong>Y. Yoon</strong>, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">MEDINFO 2025</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Poster</div>
+                    <div class="pubmain">
+                        <a class="pubtitle pub-poster" href="posters/poster-mrhealth-mms2025.jpg" target="_blank" rel="noopener" data-poster="posters/poster-mrhealth-mms2025.jpg" data-title="Effects of Gradual Visual Transition Based Onboarding and Offboarding Framework on User Experience in a Mixed Reality Health Checkup System: A Pilot Study" data-category="Medical Metaverse Society 2025 · Poster">Effects of Gradual Visual Transition Based Onboarding and Offboarding Framework on User Experience in a Mixed Reality Health Checkup System: A Pilot Study <span class="openarrow poster-icon">⊕</span></a>
+                        <div class="pubauthors"><strong>Y. Yoon</strong>, K. Kim, P. Thamjamrassri, Y. Kong, S. Jeong, E.K. Choe, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">Medical Metaverse Society 2025</div>
+                </div>
+                <div class="pubrow">
+                    <div class="pubtype">Poster</div>
+                    <div class="pubmain">
+                        <a class="pubtitle pub-poster" href="posters/poster-endoscopy-mms2025.jpg" target="_blank" rel="noopener" data-poster="posters/poster-endoscopy-mms2025.jpg" data-title="The Impact of a 3D Printed Physical Interface on Learning Effectiveness and User Experience of a VR Endoscopy Simulator: A Scaffolding Learning-focused Pilot Study" data-category="Medical Metaverse Society 2025 · Poster">The Impact of a 3D Printed Physical Interface on Learning Effectiveness and User Experience of a VR Endoscopy Simulator: A Scaffolding Learning-focused Pilot Study <span class="openarrow poster-icon">⊕</span></a>
+                        <div class="pubauthors">J.-H. Shin, <strong>Y. Yoon</strong>, D. Cho, Y. Kim, S. Ahn, J. Woo, D. Choi, J.-Y. Park, H.-J. Kong</div>
+                    </div>
+                    <div class="pubvenue">Medical Metaverse Society 2025</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Independent Fullscreen Views (Information / Archive / Project Details) -->
+    <div id="independent-views">
+
+        <!-- Archive Fullscreen View (Masonry Grid) -->
+        <div id="view-archive" class="fullscreen-view archive-view" style="display: none;">
+            <div class="archive-content-wrapper">
+                <!-- Archive Hero Title Banner -->
+                <h1 class="h1alt">
+                    <span class="ogg">Experimental archive</span> of 3D explorations 🫧, spatial interactions 🧩, brand identities ✍🏻, UI experiments 🩻, code 🔗, motion 🌀, photos 🎞, and clinical concepts 🕯
+                </h1>
+
+                <!-- Archive Masonry Grid -->
+                <div class="pinterestgrid">
+
+                    <!-- Card 1: UAM Spatial UX Series (8 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/uam.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/uam.jpg?v=20260904_FRESH", "experimental/uam-2.jpg?v=20260904_FRESH", "experimental/uam-3.jpg?v=20260904_FRESH", "experimental/uam-4.jpg?v=20260904_FRESH", "experimental/uam-5.jpg?v=20260904_FRESH", "experimental/uam-6.jpg?v=20260904_FRESH", "experimental/uam-7.jpg?v=20260904_FRESH", "experimental/uam-8.jpg?v=20260904_FRESH"]'
+                         data-title="Urban Air Mobility (UAM) Spatial UI & Cockpit Experience Concept" 
+                         data-category="SPATIAL UX / MOBILITY CONCEPT">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/uam.jpg?v=20260904_FRESH" alt="UAM Spatial UX Series" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 8 Visuals</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">SPATIAL UI</span>
+                                <span class="projecttag">UAM</span>
+                                <span class="projecttag">MOBILITY</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">8 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Robotic Surgical Console (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/surgical-console-v2.jpg"
+                         data-static-thumb="true"
+                         data-gallery='["experimental/surgical-console-v2.jpg", "experimental/surgical-console-sketch.jpg"]'
+                         data-title="Robotic Surgical Console & Control UX" 
+                         data-category="MEDICAL UX / ROBOTIC SURGERY">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/surgical-console-v2.jpg" alt="Robotic surgical console" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View Visual</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">SURGICAL ROBOT</span>
+                                <span class="projecttag">CONSOLE</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: KAIST MoS2 Nanomaterial Graphic Series (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/kaist-mos2-1.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/kaist-mos2-1.jpg?v=20260904_FRESH", "experimental/kaist-mos2-2.jpg?v=20260904_FRESH"]'
+                         data-title="KAIST MoS2 2D Semiconductor & Nanomaterial Graphic" 
+                         data-category="SCIENTIFIC ILLUSTRATION / KAIST">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/kaist-mos2-1.jpg?v=20260904_FRESH" alt="KAIST MoS2 graphic" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 2 Visuals</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">KAIST</span>
+                                <span class="projecttag">MoS2</span>
+                                <span class="projecttag">ILLUSTRATION</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: KIST Hydrovoltaic Energy Harvesting Series (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/kist-hydrovoltaic-1.png?v=20260904_FRESH"
+                         data-gallery='["experimental/kist-hydrovoltaic-1.png?v=20260904_FRESH", "experimental/kist-hydrovoltaic-2.png?v=20260904_FRESH"]'
+                         data-title="KIST Hydrovoltaic Energy Harvesting Nanomaterial Graphic" 
+                         data-category="SCIENTIFIC ILLUSTRATION / KIST">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/kist-hydrovoltaic-1.png?v=20260904_FRESH" alt="KIST Hydrovoltaic graphic" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 2 Visuals</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">KIST</span>
+                                <span class="projecttag">HYDROVOLTAIC</span>
+                                <span class="projecttag">GRAPHIC</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: J. Mater. Chem. A Back Cover (1 Image) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/kist-no2.png?v=20260904_FRESH"
+                         data-gallery='["experimental/kist-no2.png?v=20260904_FRESH"]'
+                         data-title="Journal of Materials Chemistry A — Back Cover Illustration (2025)" 
+                         data-category="SCIENTIFIC ILLUSTRATION / JOURNAL COVER"
+                         data-paper="https://news.unn.net/news/articleView.html?idxno=578468"
+                         data-paper-label="Read the cover story ↗">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/kist-no2.png?v=20260904_FRESH" alt="Journal of Materials Chemistry A back cover illustration" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View Visual</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">JOURNAL COVER</span>
+                                <span class="projecttag">KIST × AJOU UNIV.</span>
+                                <a href="https://news.unn.net/news/articleView.html?idxno=578468" target="_blank" rel="noopener" class="projecttag paper-link" onclick="event.stopPropagation()">Cover story ↗</a>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">1 ITEM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: KIST SnO2 Nanostructure Series (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/kist-sno2-1.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/kist-sno2-1.jpg?v=20260904_FRESH", "experimental/kist-sno2-2.jpg?v=20260904_FRESH"]'
+                         data-title="KIST SnO2 Semiconductor Nanostructure Graphic Cover Exploration" 
+                         data-category="SCIENTIFIC ILLUSTRATION / NANOSTRUCTURE">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/kist-sno2-1.jpg?v=20260904_FRESH" alt="KIST SnO2 graphic" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 2 Visuals</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">KIST</span>
+                                <span class="projecttag">SnO2</span>
+                                <span class="projecttag">ILLUSTRATION</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Small Structures Cover (1 Image) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/smallstructures.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/smallstructures.jpg?v=20260904_FRESH"]'
+                         data-title="Small Structures — Cover Illustration (Vol. 6, Issue 10, 2025)" 
+                         data-category="SCIENTIFIC ILLUSTRATION / JOURNAL COVER"
+                         data-paper="https://onlinelibrary.wiley.com/toc/26884062/2025/6/10"
+                         data-paper-label="View the journal issue ↗">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/smallstructures.jpg?v=20260904_FRESH" alt="Small Structures journal cover illustration" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View Visual</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">JOURNAL COVER</span>
+                                <span class="projecttag">WILEY</span>
+                                <a href="https://onlinelibrary.wiley.com/toc/26884062/2025/6/10" target="_blank" rel="noopener" class="projecttag paper-link" onclick="event.stopPropagation()">View issue ↗</a>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">1 ITEM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: MDW Poster — HMS (1 Image) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/mdw-posterhms.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/mdw-posterhms.jpg?v=20260904_FRESH"]'
+                         data-title="Media & Design Week (MDW) — HMS Poster Design" 
+                         data-category="EXHIBITION / POSTER DESIGN">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/mdw-posterhms.jpg?v=20260904_FRESH" alt="MDW Poster HMS" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View Visual</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">EXHIBITION</span>
+                                <span class="projecttag">POSTER</span>
+                                <span class="projecttag">HMS</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">1 ITEM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: MDW Poster — Pie Series (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/mdw-posterpie-1.jpg?v=20260904_FRESH"
+                         data-gallery='["experimental/mdw-posterpie-1.jpg?v=20260904_FRESH", "experimental/mdw-posterpie-2.jpg?v=20260904_FRESH"]'
+                         data-title="Media & Design Week (MDW) — Pie Poster Series" 
+                         data-category="EXHIBITION / POSTER DESIGN">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/mdw-posterpie-1.jpg?v=20260904_FRESH" alt="MDW Poster Pie Series" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 2 Posters</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">EXHIBITION</span>
+                                <span class="projecttag">POSTER</span>
+                                <span class="projecttag">PIE</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: MDW Poster — Talk (1 Image) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/mdw-postertalk.png?v=20260904_FRESH"
+                         data-gallery='["experimental/mdw-postertalk.png?v=20260904_FRESH"]'
+                         data-title="Media & Design Week (MDW) — Talk Poster Design" 
+                         data-category="EXHIBITION / POSTER DESIGN">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/mdw-postertalk.png?v=20260904_FRESH" alt="MDW Poster Talk" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View Visual</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">EXHIBITION</span>
+                                <span class="projecttag">POSTER</span>
+                                <span class="projecttag">TALK</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">1 ITEM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 10: MDW Pamphlet Series (2 Images) -->
+                    <div class="archive-item archive-card" 
+                         data-img="experimental/mdw-pamplate-1.png?v=20260904_FRESH"
+                         data-gallery='["experimental/mdw-pamplate-1.png?v=20260904_FRESH", "experimental/mdw-pamplate-2.png?v=20260904_FRESH"]'
+                         data-title="Media & Design Week (MDW) — Pamphlet & Editorial Graphic System" 
+                         data-category="EDITORIAL / PAMPHLET DESIGN">
+                        <div class="archive-image-wrapper">
+                            <img src="experimental/mdw-pamplate-1.png?v=20260904_FRESH" alt="MDW Pamphlet Series" class="imagegrid" loading="lazy">
+                            <div class="archive-overlay">
+                                <span class="archive-zoom-icon">⊕ View 2 Pamphlets</span>
+                            </div>
+                        </div>
+                        <div class="projecttag_div">
+                            <div class="experimentstagdiv">
+                                <span class="projecttag">EDITORIAL</span>
+                                <span class="projecttag">PAMPHLET</span>
+                                <span class="projecttag">MDW</span>
+                            </div>
+                            <div class="experimentstagdiv year">
+                                <span class="projecttag year">2 ITEMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Information / About Detail Page (2-Column Bio Grid Layout) -->
+        <div id="view-about-detail" class="fullscreen-view info-view" style="display: none;">
+            <div class="info-content-wrapper">
+                
+                <!-- Large Top Hero Headline -->
+                <h1 class="info-hero-headline">
+                    Hello. I'm Yejin (she/her), a Product Designer specializing in clinical UX &amp; interaction. Currently, I design and evaluate medical XR systems and surgical simulators at <span class="ogg org-underline">Seoul National University Hospital's Department of Convergence Medicine (MEDISC)</span>, while pursuing Smart Experience Design at <span class="ogg org-underline">Kookmin University</span>.
+                </h1>
+
+                <!-- 2-Column Split: Bio Paragraphs Left, Photo Right -->
+                <div class="info-main-grid">
+                    <div class="info-text-col">
+                        <p class="info-paragraph">
+                            My work centers on how complex medical technology actually reaches the people who use it. However capable a technology is, it rarely becomes a product that's truly used in the field without an understanding of its users, the environments they work in, and the regulations surrounding it. That means designing not just the interface, but the operating room and clinical setting it lives in, the way users interact with the devices and systems around them, and the judgments and actions people make within that space.
+                        </p>
+                        <p class="info-paragraph">
+                            As a researcher at <span class="org-underline">Seoul National University Hospital's Department of Convergence Medicine (MEDISC)</span>, the work spans a range of medical XR systems built in collaboration with clinical departments — from VR simulators for emergency response and surgical skills training, to systems used for medical assessment, to MR-based tools for peri-, intra-, and post-operative care, each addressing a different purpose and a different user. Across these projects, real workflows were observed through multiple visits to clinical settings; user requirements were defined through observation and interviews, built into working systems, and validated through usability and effectiveness testing with medical students and clinicians. Alongside this sits a body of client work in 2D and 3D graphics and visual output — a hands-on practice of making the final artifact directly.
+                        </p>
+                        <p class="info-paragraph">
+                            The next step is design grounded in regulation and safety — pursuing the <span class="org-underline">Korea Medical Devices Industry Association (KMDIA)</span>'s regulatory science (RA) program in 2026, and learning to see interfaces through usability engineering and regulatory approval. The longer goal is to help deep-tech products reach the market safely by supporting both their design and their regulatory process.
+                        </p>
+                        <p class="info-paragraph info-outside">
+                            Outside of work: a pull toward anything space-related, and running, regularly. Always up for a good conversation — feel free to reach out.
+                        </p>
+                    </div>
+
+                    <div class="info-photo-col">
+                        <div class="info-photo-sticky">
+                            <div class="info-portrait-frame">
+                                <img src="images/profile-2026d.jpg" alt="Yejin Yoon" class="info-portrait-img">
+                            </div>
+                            <div class="info-links">
+                                <a href="mailto:yoko7032@gmail.com">Email <span class="openarrow">↗</span></a>
+                                <a href="yejinyoon-cv.pdf" target="_blank" rel="noopener">Résumé <span class="openarrow">↗</span></a>
+                                <a href="https://www.linkedin.com/in/yejin-yoon-1a26a3273/" target="_blank" rel="noopener">LinkedIn <span class="openarrow">↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Section: Education, Skills & CV Download -->
+                <div class="info-secondary-section">
+                    <div class="cv-section-block">
+                        <h3 class="cv-block-title">Education</h3>
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <div class="edu-school"><span class="org-underline">Kookmin University</span></div>
+                                <div class="edu-degree">M.S. in Smart Experience Design (AI Design)</div>
+                                <div class="edu-period">Sept 2024 – Aug 2026 · Coursework completed</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="edu-school"><span class="org-underline">Sungshin Women's University</span></div>
+                                <div class="edu-degree">B.F.A. in Textile Design</div>
+                                <div class="edu-period">March 2018 – Feb 2023</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-block">
+                        <h3 class="cv-block-title">Expertise & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Tools & Software</h4>
+                                <p>Blender, Figma, Unity, C#, Python, Vision Pro (visionOS), Meta Quest 3, Adobe CC, Fusion 360, Claude, Cursor, Antigravity, Rhino, KeyShot</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Skills & Domains</h4>
+                                <p>UX Design, Interaction Design, User Research, Usability Evaluation, 3D Prototyping, Requirements Documentation, Study Protocol Design, Medical XR, Surgical Training, Regulatory Science (RA)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-block">
+                        <h3 class="cv-block-title">Activities &amp; Honors</h3>
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <div class="edu-school">Excellence Award (Corporate Category)</div>
+                                <div class="edu-degree">2024 Metaverse Developer Contest</div>
+                                <div class="edu-period">National Award · 2024</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="edu-school">First Prize (Open Category)</div>
+                                <div class="edu-degree">2023 Metaverse Developer Contest</div>
+                                <div class="edu-period">National Award · 2023</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="edu-school">Best Poster Award</div>
+                                <div class="edu-degree">Korean Society of Medical Informatics (KOSMI)</div>
+                                <div class="edu-period">2023</div>
+                            </div>
+                            <div class="education-item">
+                                <div class="edu-school"><a class="honor-link" href="https://www.xreal.info/" target="_blank" rel="noopener">XREAL (Student XR Society) <span class="openarrow">↗</span></a></div>
+                                <div class="edu-degree">Branding Leader &amp; Designer</div>
+                                <div class="edu-period">Branding · Spatial Design · Event System</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-actions">
+                        <a href="yejinyoon-cv.pdf" target="_blank" download class="primary-btn">Download CV (PDF) <span class="openarrow">↓</span></a>
+                        <a href="mailto:yoko7032@gmail.com" class="secondary-email-link">yoko7032@gmail.com ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- ==========================================================================
+             Project Detail 1: XR Surgical (LAPA VR)
+             ========================================================================== -->
+        <div id="view-xr-surgical" class="fullscreen-view project-detail-view" style="display: none;">
+            <div class="view-header sticky">
+                <button class="back-btn" data-action="back-home">← Back to Projects</button>
+                <span class="detail-title">LAPA VR (XR Surgical Simulator)</span>
+            </div>
+
+            <!-- Title Container -->
+            <div class="projecttitlecontainer">
+                <h1 class="h1projecttitle">
+                    <span class="ogg">LAPA VR</span> 🩻 is an immersive VR surgical simulator for laparoscopic cholecystectomy training that transforms complex procedural workflows into interactive, step-by-step learning.
+                </h1>
+                <a class="paper-link-pill pub-poster" href="posters/poster-lapa-cde2026.jpg" target="_blank" rel="noopener" data-poster="posters/poster-lapa-cde2026.jpg" data-title="Technical Validation of a Virtual Reality-Based Laparoscopic Cholecystectomy Simulator: Focusing on the Gallbladder Interaction Module" data-category="CDE 2026 · Poster">View the poster · CDE 2026 <span class="openarrow poster-icon">⊕</span></a>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- 4-Column Metadata Overview -->
+            <div class="projectoverview">
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles cs">Timeline —<br/></span>
+                        <span class="projectoverviewcontent">2023 – 2024 (5 Months)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles cs">Role —<br/></span>
+                        3D Graphic Design<br/>
+                        Product Design &amp; Spatial UX<br/>
+                        Procedural Animation
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles cs">For —<br/></span>
+                        SNUH Pediatric Surgery &amp; Transdisciplinary Medicine Lab
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles cs">With —<br/></span>
+                        <span class="projectoverviewcontent">
+                            Pediatric Surgeon (SNUH)<br/>
+                            Transdisciplinary Medicine Prof.<br/>
+                            Software Engineer &amp; Designer
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- Hero Image Showcase -->
+            <div class="mainimagecontainer">
+                <div class="projectimagecontainer fillcsvid">
+                    <div class="imagecontainer full">
+                        <video class="projectimage project-loop" src="videos/web/lapa-loop.mp4" poster="images/thumbnail-xrsurgicalsim.jpg" autoplay muted loop playsinline preload="metadata" aria-label="LAPA VR Surgical Simulator Demo"></video>
+                    </div>
+                </div>
+                <span class="hero-caption-note">“Built in collaboration with SNUH Pediatric Surgery and Transdisciplinary Medicine Lab”</span>
+            </div>
+
+            <!-- Overview & Contribution (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs">OVERVIEW<br/></span>
+                        <span class="projectsubheader">Transforming Complex Surgical Education</span>
+                        LAPA VR is an immersive training simulator designed to teach laparoscopic cholecystectomy through interactive, step-by-step procedural learning. Developed with surgeons, clinical educators, and XR specialists, it replicates real surgical workflows—from trocar placement to gallbladder removal—enabling trainees to build spatial understanding and procedural confidence.<br/><br/>
+                        <span class="projectheadercs">MY CONTRIBUTION<br/></span>
+                        <span class="projectsubheader">Bridging Surgical Accuracy and Real-Time Interaction</span>
+                        I designed medically accurate 3D anatomical assets and procedural animations, ensuring both visual fidelity and technical optimization for real-time simulation. Collaborating closely with engineers and clinical experts, I aligned every design choice with surgical accuracy and training goals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Clinical Research & Problem -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker cs">Clinical Research &amp; Problem</div>
+                    <div class="sectionheader breaker caption">How did operating room field studies uncover critical bottlenecks in surgical residency training?</div>
+                </div>
+            </div>
+
+            <!-- Research Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/lapa-research.png" alt="SNUH Operating Room Field Studies" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">CLINICAL DISCOVERY</span>
+                        <span class="projectsubheader">Operating Room Field Studies</span>
+                        Combining on-site field observations and in-depth interviews with pediatric surgeons to identify critical breakdowns in residency training:<br/><br/>
+                        <strong>1. Learning Access Gap:</strong> Reduced operating room exposure limits opportunities for repeated, self-guided practice.<br/>
+                        <strong>2. High-Cost Barriers:</strong> Traditional box and mannequin trainers require intensive facility budgets and maintenance.<br/>
+                        <strong>3. Unrealistic VR Alternatives:</strong> Conventional VR apps lack realistic surgical anatomy, tactile feedback, and authentic procedural logic.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Procedure Mapping -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/web/lapa-flow-mapping.jpg" alt="Step-by-step procedure flow mapping" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">PROCEDURE MAPPING</span>
+                        <span class="projectsubheader">From Surgical Steps to Interaction Specs</span>
+                        Broke the procedure down step by step, pairing each surgical action with its instruments and anatomical landmarks. This map became the specification for the simulator’s interaction flow and guidance content.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Design Artifacts -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker cs">Design Artifacts</div>
+                    <div class="sectionheader breaker caption">Translating surgical procedures into interactive XR milestones</div>
+                </div>
+            </div>
+
+            <!-- Artifact 1: Trocar & UI System -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/lapa-figma.png" alt="Interactive Trocar Placement & UI System" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">STAGE 01</span>
+                        <span class="projectsubheader">Interactive Trocar Placement &amp; UI System</span>
+                        Trainees practice determining optimal port placement based on patient-specific abdominal anatomy, receiving instant visual guidance on angles, safety margins, and insertion depths.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 2: Calot's Triangle Dissection -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/lapa-contextual-learning-ui.png" alt="Gallbladder Traction & Calot's Triangle Dissection" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">STAGE 02</span>
+                        <span class="projectsubheader">Gallbladder Traction &amp; Contextual Guidance</span>
+                        Simulates two-handed grasper traction and electrocautery hook dissection around Calot’s triangle, exposing the cystic duct and artery while preventing accidental bile duct perforation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 3 & 4: Clipping & Pouch Extraction (Side-by-Side 50/50) -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer half-cs left">
+                    <img src="images/lapa-calots-triangle.jpg" alt="Cystic Duct & Artery Dissection" class="projectimage fullwidth" loading="lazy">
+                </div>
+                <div class="imagecontainer half-cs">
+                    <img src="images/lapa-ani2.jpg" alt="Softbody Tissue Deformation Dynamics" class="projectimage fullwidth" loading="lazy">
+                </div>
+            </div>
+            <div class="onlyheadersectioncontainer" style="padding-top: 10px;">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs">STAGE 03 &amp; 04</span>
+                        <span class="projectsubheader">Vessel Clipping, Division &amp; Extraction</span>
+                        Trainees apply surgical clips to the cystic duct and artery with realistic haptic trigger thresholds, divide vessels safely, and detach the gallbladder from the liver bed before laparoscopic pouch extraction.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Simulation Features -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer half-cs left">
+                    <img src="images/web/lapa-feature-softbody.jpg" alt="Softbody simulation and organ interaction" class="projectimage fullwidth" loading="lazy">
+                </div>
+                <div class="imagecontainer half-cs">
+                    <img src="images/web/lapa-feature-metaverse-or.jpg" alt="Metaverse surgical room and player roles" class="projectimage fullwidth" loading="lazy">
+                </div>
+            </div>
+            <div class="onlyheadersectioncontainer" style="padding-top: 10px;">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs">SIMULATION FEATURES</span>
+                        <span class="projectsubheader">Soft-Body Tissue &amp; a Shared Virtual OR</span>
+                        Soft-body tissue responds to grasping and traction, and the procedure takes place in a shared virtual operating room where each participant selects a role.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Validation & Impact -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker cs">Validation &amp; Impact</div>
+                    <div class="sectionheader breaker caption">Faculty reviews, competition recognition, and academic publication</div>
+                </div>
+            </div>
+
+            <!-- User Testing -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/web/lapa-user-testing.jpg" alt="Users testing LAPA VR with headsets" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">USER TESTING</span>
+                        <span class="projectsubheader">Hands-on Sessions in the Headset</span>
+                        Ran hands-on sessions with users in the headset, observing how they followed procedural guidance and handled the instruments, and fed those observations back into the interaction design.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Impact Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/lapa-impact.png" alt="Metaverse Developer Competition Award & Presentation" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs">RECOGNITION &amp; ITERATION</span>
+                        <span class="projectsubheader">1st Place Metaverse Dev Contest &amp; CDE 2026</span>
+                        <strong>🏆 1st Place (Open Category):</strong> Awarded Grand Prize at the 2023 Metaverse Developer Competition.<br/><br/>
+                        <strong>📄 <a class="inline-paper-link pub-poster" href="posters/poster-lapa-cde2026.jpg" target="_blank" rel="noopener" data-poster="posters/poster-lapa-cde2026.jpg" data-title="Technical Validation of a Virtual Reality-Based Laparoscopic Cholecystectomy Simulator: Focusing on the Gallbladder Interaction Module" data-category="CDE 2026 · Poster">CDE 2026 Poster ⊕</a>:</strong> First-author technical validation of the gallbladder grasp-and-pull module, with stable real-time performance and 100% interaction success across 50 automated trials in both PC and headset conditions.<br/><br/>
+                        <strong>Faculty-Driven Iteration:</strong> Highlighted Calot’s triangle safety zone with dynamic anatomical shader warnings and added non-intrusive procedural guidance HUD cards for self-paced trainees.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Takeaways (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs">TAKEAWAYS<br/></span>
+                        <span class="projectsubheader">What I Learned</span>
+                        <strong>1. Interdisciplinary collaboration drives clinical relevance:</strong> Working directly with attending surgeons and medical educators bridged digital precision with real-world clinical utility.<br/><br/>
+                        <strong>2. Effective VR learning is about cognition, not just visual fidelity:</strong> Visual realism creates immersion, but structured cognitive milestones, ergonomic interaction flows, and clear feedback loops drive genuine competency.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Project Navigation -->
+            <div class="sectionunderline"></div>
+            <div class="project-bottom-nav">
+                <div class="otherprojects left">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-mr-physician"><span class="openarrow">← </span><span class="unhovering forward">MR Physician Assistant</span></a>
+                </div>
+                <div class="otherprojects right">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-mr-health"><span class="unhovering back">MR Health Checkup</span> <span class="openarrow">→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             Project Detail 2: MR Physician Assistant
+             ========================================================================== -->
+        <div id="view-mr-physician" class="fullscreen-view project-detail-view" style="display: none;">
+            <div class="view-header sticky">
+                <button class="back-btn" data-action="back-home">← Back to Projects</button>
+                <span class="detail-title">MR Physician Assistant System</span>
+            </div>
+
+            <!-- Title Container -->
+            <div class="projecttitlecontainer">
+                <h1 class="h1projecttitle">
+                    <span class="ogg">MR Physician Assistant</span> 🩺 is an Apple Vision Pro perioperative guidance system that enhances intraoperative situational awareness through spatially anchored medical data.
+                </h1>
+                <a class="paper-link-pill" href="https://ieeexplore.ieee.org/document/11236233" target="_blank" rel="noopener">Read the paper · IEEE ISMAR-Adjunct ’25 <span class="openarrow">↗</span></a>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- 4-Column Metadata Overview -->
+            <div class="projectoverview">
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles physician">Timeline —<br/></span>
+                        <span class="projectoverviewcontent">2024 – 2025 (6 Months)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles physician">Role —<br/></span>
+                        3D Graphic Design<br/>
+                        Product &amp; Spatial UX Design<br/>
+                        Interaction Prototyping
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles physician">For —<br/></span>
+                        SNUH Breast &amp; Endocrine Surgery &amp; MediSC Lab
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles physician">With —<br/></span>
+                        <span class="projectoverviewcontent">
+                            Breast &amp; Endocrine Surgeon (SNUH)<br/>
+                            Transdisciplinary Medicine Prof.<br/>
+                            Software Engineer &amp; Designer
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- Hero Image Showcase -->
+            <div class="mainimagecontainer">
+                <div class="projectimagecontainer fillcsvid">
+                    <div class="imagecontainer full">
+                        <video class="projectimage project-loop" src="videos/web/mr-physician-loop.mp4" poster="images/thumbnail-mrphysicianassist.png" autoplay muted loop playsinline preload="metadata" aria-label="MR Physician Assistant on Apple Vision Pro demo"></video>
+                    </div>
+                </div>
+                <span class="hero-caption-note">“Built in collaboration with SNUH Breast &amp; Endocrine Surgery and MediSC Lab”</span>
+            </div>
+
+            <!-- Overview & Contribution (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">OVERVIEW<br/></span>
+                        <span class="projectsubheader">Reimagining Perioperative Surgical Assistance</span>
+                        The MR Physician Assistant System is a Vision Pro-based perioperative tool designed to support surgeons during pre-, intra-, and postoperative stages. By anchoring medical data and procedural steps in 3D space, the system streamlines the surgical workflow, enhances team coordination, and reduces cognitive load—without interrupting the sterile field.<br/><br/>
+                        <span class="projectheadercs physician">MY CONTRIBUTION<br/></span>
+                        <span class="projectsubheader">Designing Spatial UX for the Sterile Operating Room</span>
+                        I developed the core 3D interface and spatial UX flow tailored for the operating room context. This included intuitive UI placement in the surgeon's field of view, animated visualization of surgical stages, and MR-anchored checklist interactions. I also created anatomically relevant 3D assets and designed seamless transitions between phases of surgery.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Clinical Workflow & Problem -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker physician">Clinical Workflow &amp; Problem</div>
+                    <div class="sectionheader breaker caption">Mapping spatial dependencies and interface constraints in sterile operating rooms</div>
+                </div>
+            </div>
+
+            <!-- Research Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/web/mrphysician-requirements-v2.jpg" alt="User requirements specification (details blurred)" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">CLINICAL DISCOVERY</span>
+                        <span class="projectsubheader">Perioperative Workflow &amp; Sterile Zone Mapping</span>
+                        Mixed-method research with surgeons and OR staff revealed three critical friction points:<br/><br/>
+                        <strong>1. Fragmented Workflow:</strong> Surgeons frequently switch between physical tools and separate 2D monitor screens, causing attention division.<br/>
+                        <strong>2. Non-Sterile Interface Barriers:</strong> Touchscreens cannot be used in sterile fields, limiting real-time access to imaging and checklists.<br/>
+                        <strong>3. Cognitive Overload:</strong> Real-time management of anatomy, vital signs, and surgical timing strains intraoperative decision-making.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Design Artifacts -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker physician">Design Artifacts</div>
+                    <div class="sectionheader breaker caption">Spatially anchored interfaces designed for sterile surgical execution</div>
+                </div>
+            </div>
+
+            <!-- Artifact 1 & 2: EMR & 3D CT/MRI (Side-by-Side 50/50) -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer half-cs left">
+                    <img src="images/mrassi-emr.png" alt="Spatially Anchored Patient Vital Monitor & EMR Records" class="projectimage fullwidth" loading="lazy">
+                </div>
+                <div class="imagecontainer half-cs">
+                    <img src="images/mrassi-ctmri.png" alt="3D CT and MRI Volumetric Rendering & Spatial Slicing" class="projectimage fullwidth" loading="lazy">
+                </div>
+            </div>
+            <div class="onlyheadersectioncontainer" style="padding-top: 10px;">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">STAGE 01 &amp; 02</span>
+                        <span class="projectsubheader">Spatial EMR &amp; 3D Volumetric Imaging</span>
+                        <strong>Left:</strong> Spatially anchored patient vital monitors and EMR checklist overlays accessible without sterile breach.<br/>
+                        <strong>Right:</strong> Patient-aligned 3D CT/MRI volumetric rendering with interactive spatial slicing, allowing surgeons to inspect tumor boundaries without leaving the operating table.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 3: visionOS Figma Design System -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/mrassi-uifigma.png" alt="visionOS Spatial UI Design System & Component Tokens" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">STAGE 03</span>
+                        <span class="projectsubheader">visionOS Spatial UI Design System</span>
+                        Ergonomic gaze targets, glassmorphic panel tokens, widget hierarchy, and comfort field-of-view (FOV) zones designed to keep critical surgical data instantly readable without obstructing the operative field.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 4 & 5: Gaze & Gesture NUI (text) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">STAGE 04 &amp; 05</span>
+                        <span class="projectsubheader">Gaze &amp; Gesture NUI Interaction</span>
+                        Gaze-dwell targeting and micro-pinch gestures let surgeons operate the interface without touching non-sterile surfaces. Multi-axis 3D manipulator widgets allow them to orient and scale volumetric scans directly in space.
+                    </p>
+                </div>
+            </div>
+
+            <!-- In-OR Clinician Feedback (Side-by-Side 50/50) -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer half-cs left">
+                    <img src="images/mrassi-iteration.png" alt="Surgical staff trying the system in an operating room" class="projectimage fullwidth" loading="lazy">
+                </div>
+                <div class="imagecontainer half-cs">
+                    <img src="images/mrassi-iteration2.png" alt="Clinician interacting with spatial panels in the operating room" class="projectimage fullwidth" loading="lazy">
+                </div>
+            </div>
+            <div class="onlyheadersectioncontainer" style="padding-top: 10px;">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">IN-OR FEEDBACK</span>
+                        <span class="projectsubheader">Clinicians Testing in a Real Operating Room</span>
+                        Surgical staff wore the headset in an actual operating room and tried the system hands-on. Their feedback led to tuning gaze-dwell trigger thresholds to prevent accidental activations, and adjusting dark-adapted UI luminance to stay legible under surgical lighting.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Validation & Impact -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker physician">Validation &amp; Impact</div>
+                    <div class="sectionheader breaker caption">Competition recognition and academic publication</div>
+                </div>
+            </div>
+
+            <!-- Impact Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/mrassi-impact.png" alt="IEEE ISMAR 2025 Paper and Surgical Impact" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">RECOGNITION</span>
+                        <span class="projectsubheader">Excellence Award &amp; IEEE ISMAR-Adjunct 2025</span>
+                        <strong>🏆 Excellence Award (Corporate Category):</strong> Recognized at the 2024 Metaverse Developer Contest, hosted by the Ministry of Science and ICT.<br/><br/>
+                        <strong>📄 <a class="inline-paper-link" href="https://ieeexplore.ieee.org/document/11236233" target="_blank" rel="noopener">IEEE ISMAR-Adjunct 2025 ↗</a>:</strong> Co-authored research on hand-gesture-free NUI using 3D manipulator widgets for MR surgical navigation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Takeaways (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs physician">TAKEAWAYS<br/></span>
+                        <span class="projectsubheader">What I Learned</span>
+                        <strong>1. Physical context dictates spatial UX:</strong> In high-stakes environments like the OR, every UI placement must consider lighting, sterile boundaries, and surgeon ergonomics.<br/><br/>
+                        <strong>2. Precision in simplicity:</strong> Medical UX requires stripping away unnecessary visual noise—giving clinicians exactly the right data at the right second.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Project Navigation -->
+            <div class="sectionunderline"></div>
+            <div class="project-bottom-nav">
+                <div class="otherprojects left">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-mr-health"><span class="openarrow">← </span><span class="unhovering forward">MR Health Checkup</span></a>
+                </div>
+                <div class="otherprojects right">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-xr-surgical"><span class="unhovering back">LAPA VR</span> <span class="openarrow">→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             Project Detail 3: MR Health Checkup
+             ========================================================================== -->
+        <div id="view-mr-health" class="fullscreen-view project-detail-view" style="display: none;">
+            <div class="view-header sticky">
+                <button class="back-btn" data-action="back-home">← Back to Projects</button>
+                <span class="detail-title">MR Health Checkup System</span>
+            </div>
+
+            <!-- Title Container -->
+            <div class="projecttitlecontainer">
+                <h1 class="h1projecttitle">
+                    <span class="ogg">MR Health Checkup</span> 🫀 is an Apple Vision Pro mixed reality questionnaire system that transforms clinical medical checkups into an empathetic, interactive spatial journey.
+                </h1>
+                <a class="paper-link-pill" href="https://doi.org/10.1145/3772363.3798638" target="_blank" rel="noopener">Read the paper · ACM CHI EA ’26 <span class="openarrow">↗</span></a>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- 4-Column Metadata Overview -->
+            <div class="projectoverview">
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles health">Timeline —<br/></span>
+                        <span class="projectoverviewcontent">2024 – 2025 (5 Months)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles health">Role —<br/></span>
+                        Spatial UX/UI Design<br/>
+                        3D World &amp; Character Design<br/>
+                        User Evaluation &amp; Research
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles health">For —<br/></span>
+                        SNUH Preventive Medicine &amp; Medical Convergence Lab
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles health">With —<br/></span>
+                        <span class="projectoverviewcontent">
+                            Preventive Medicine Physician (SNUH)<br/>
+                            Transdisciplinary Medicine Prof.<br/>
+                            Software Engineer &amp; AI Researcher
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- Hero Image Showcase -->
+            <div class="mainimagecontainer">
+                <div class="projectimagecontainer fillcsvid">
+                    <div class="imagecontainer full">
+                        <video class="projectimage project-loop" src="videos/web/mr-health-loop.mp4" poster="images/thumbnail-mrhealthcheck.png" autoplay muted loop playsinline preload="metadata" aria-label="MR Health Checkup on Apple Vision Pro demo"></video>
+                    </div>
+                </div>
+                <span class="hero-caption-note">“Built in collaboration with SNUH Preventive Medicine and Medical Convergence Lab”</span>
+            </div>
+
+            <!-- Overview & Contribution (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">OVERVIEW<br/></span>
+                        <span class="projectsubheader">Transforming Preventative Health Assessments</span>
+                        The MR Health Checkup System is a Vision Pro-based mixed-reality questionnaire platform that replaces rigid paper forms with an intuitive, avatar-guided consultation. Designed to improve data accuracy and patient engagement, the system uses spatial interactions and adaptive visual pacing to make medical checkups more comfortable and reliable.<br/><br/>
+                        <span class="projectheadercs health">MY CONTRIBUTION<br/></span>
+                        <span class="projectsubheader">Balancing Clinical Accuracy and Emotional Comfort</span>
+                        I led the end-to-end UX/UI and 3D visual design—creating the spatial layout, interactive health modules, animated lifestyle demonstrations, and visual transitions that minimize VR discomfort. I also planned and executed the comparative usability study comparing traditional questionnaires with the MR experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Clinical Research & Baseline -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker health">Clinical Research &amp; Problem</div>
+                    <div class="sectionheader breaker caption">Why conventional paper questionnaires fail patient recall and preventive engagement</div>
+                </div>
+            </div>
+
+            <!-- Research Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/img-6deaf76a.png" alt="Clinical Paper Health Questionnaire Analysis" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">CLINICAL DISCOVERY</span>
+                        <span class="projectsubheader">Baseline Paper Questionnaire Analysis</span>
+                        Field observations and clinical interviews at SNUH identified key breakdowns in traditional questionnaires:<br/><br/>
+                        <strong>1. Context Mismatch &amp; Recall Errors:</strong> Patients guessed or underestimated lifestyle metrics (e.g., smoking pack-years, drinking frequency, exercise intensity).<br/>
+                        <strong>2. Social Desirability Bias:</strong> Users answered based on perceived expectations rather than truthful habits.<br/>
+                        <strong>3. High Cognitive Burden:</strong> Text-dense paper sheets caused patient fatigue and high abandonment rates.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Design Artifacts -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker health">Design Artifacts</div>
+                    <div class="sectionheader breaker caption">Empathetic spatial modules and adaptive interaction systems</div>
+                </div>
+            </div>
+
+            <!-- Artifact 1 & 2: Survey Blocks & Architecture (Side-by-Side 50/50) -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer half-cs left">
+                    <img src="images/mrhealth-surveyblock.jpg" alt="Modular Health Survey Blocks" class="projectimage fullwidth" loading="lazy">
+                </div>
+                <div class="imagecontainer half-cs">
+                    <img src="images/mrhealth-system-architecture.png" alt="Full System Architecture & AI Pipeline" class="projectimage fullwidth" loading="lazy">
+                </div>
+            </div>
+            <div class="onlyheadersectioncontainer" style="padding-top: 10px;">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">STAGE 01 &amp; 02</span>
+                        <span class="projectsubheader">Modular Survey Blocks &amp; AI System Architecture</span>
+                        <strong>Left:</strong> Modular survey domains covering disease history, smoking habit timeline, alcohol consumption, and exercise.<br/>
+                        <strong>Right:</strong> Real-time integration of AI dialogue agent, Unity spatial renderer, and secure clinical database.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 3: Gradual Visual Transition Framework -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/mrhealth-framework.png" alt="Gradual Visual Transition Onboarding Framework" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">STAGE 03</span>
+                        <span class="projectsubheader">Gradual Visual Transition Framework</span>
+                        Engineered a 4-phase progressive immersion curve—moving gradually from passthrough reality to comforting virtual consultation rooms—mitigating initial VR anxiety and preventing spatial disorientation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Questionnaire UI Panels -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/web/mrhealth-ui-panels-v2.jpg" alt="Health questionnaire UI panels with avatar and organ selection" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">QUESTIONNAIRE UI</span>
+                        <span class="projectsubheader">Spatial Panels Around a Body Map</span>
+                        Questionnaire panels are arranged around a full-body avatar, so patients select organs and conditions directly on the body instead of scanning text-heavy lists.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 4: Dialogue UI Prototyping & 3D Risk Visualization -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/mrhealth-iteration.jpg" alt="Dialogue UI Prototyping & 3D Risk Visualization" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">STAGE 04</span>
+                        <span class="projectsubheader">Dialogue UI &amp; 3D Risk Visualization</span>
+                        Developed natural hand-tracking pickers for numeric inputs, animated exercise intensity avatars, and dynamic 3D anatomical risk visualizers that respond contextually to patient responses.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Breaker: Validation & Impact -->
+            <div class="onlyheadersectioncontainer breaker">
+                <div class="imageheadersectioncontainer">
+                    <div class="sectionheader breaker health">Validation &amp; Impact</div>
+                    <div class="sectionheader breaker caption">User study with real participants and ACM CHI EA '26 publication</div>
+                </div>
+            </div>
+
+            <!-- Impact Visual Block -->
+            <div class="projectimagecontainer">
+                <div class="imagecontainer cs">
+                    <img src="images/mrhealth-validation.png" alt="Participants using the MR health questionnaire on Apple Vision Pro during the user study" class="projectimage" loading="lazy">
+                </div>
+                <div class="projecttextcontainer centered">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">USER STUDY</span>
+                        <span class="projectsubheader">Evaluated with Real Users, Published at CHI</span>
+                        <strong>📄 <a class="inline-paper-link" href="https://doi.org/10.1145/3772363.3798638" target="_blank" rel="noopener">ACM CHI Extended Abstracts 2026 ↗</a>:</strong> Participants completed the health questionnaire on both a tablet and the MR system in a within-subject study (N = 30), published as empirical research.<br/><br/>
+                        <strong>✦ 95% Completion Rate</strong> without external operator assistance.<br/>
+                        <strong>✦ 87% User Preference</strong> for MR over conventional paper questionnaires.<br/>
+                        <strong>✦ Tolerable SSQ Scores</strong> across all participant demographics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Takeaways (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs health">TAKEAWAYS<br/></span>
+                        <span class="projectsubheader">What I Learned</span>
+                        <strong>1. Emotion is foundational in health UX:</strong> Immersive environments ease patient anxiety, creating safe spaces where users feel understood rather than tested.<br/><br/>
+                        <strong>2. In XR, context is the interface:</strong> Patients don't just answer questions; they respond to the ambience, lighting, and pacing of the spatial environment.<br/><br/>
+                        <strong>3. Clinical rigor and delight can coexist:</strong> Medical accuracy builds trust, while intuitive spatial delight drives lasting preventive engagement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Project Navigation -->
+            <div class="sectionunderline"></div>
+            <div class="project-bottom-nav">
+                <div class="otherprojects left">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-xr-surgical"><span class="openarrow">← </span><span class="unhovering forward">LAPA VR</span></a>
+                </div>
+                <div class="otherprojects right">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-mr-physician"><span class="unhovering back">MR Physician Assistant</span> <span class="openarrow">→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             Project Detail 4: CPX Metaverse
+             ========================================================================== -->
+        <div id="view-cpx-metaverse" class="fullscreen-view project-detail-view" style="display: none;">
+            <div class="view-header sticky">
+                <button class="back-btn" data-action="back-home">← Back to Projects</button>
+                <span class="detail-title">CPX Metaverse &amp; Digital Humans</span>
+            </div>
+
+            <!-- Title Container -->
+            <div class="projecttitlecontainer">
+                <h1 class="h1projecttitle">
+                    <span class="ogg">CPX Metaverse</span> 🧠 is a medical competency assessment platform powered by conversational clinical AI and interactive virtual standardized patients.
+                </h1>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- 4-Column Metadata Overview -->
+            <div class="projectoverview">
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles metaverse">Timeline —<br/></span>
+                        <span class="projectoverviewcontent">2023 – 2024</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles metaverse">Role —<br/></span>
+                        Spatial UX &amp; Character Design<br/>
+                        Conversational AI Pipeline
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles metaverse">For —<br/></span>
+                        SNUH Medical Education &amp; Clinical Assessment Lab
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="projectoverviews">
+                        <span class="projectoverviewtitles metaverse">With —<br/></span>
+                        <span class="projectoverviewcontent">
+                            Medical Education Professors<br/>
+                            Clinical Psychologists &amp; AI Engineers
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectionunderline"></div>
+
+            <!-- Hero Image Showcase -->
+            <div class="mainimagecontainer">
+                <div class="projectimagecontainer fillcsvid">
+                    <div class="imagecontainer full">
+                        <img src="images/12.jpg" alt="CPX Metaverse Demo" class="projectimage">
+                    </div>
+                </div>
+                <span class="hero-caption-note">“Built in collaboration with SNUH Medical Education and Transdisciplinary Medicine Lab”</span>
+            </div>
+
+            <!-- Overview & Contribution (Two-Column Text Split) -->
+            <div class="onlyheadersectioncontainer">
+                <div class="onlyheadercontainer">
+                    <p class="onlyheader"><br/></p>
+                </div>
+                <div class="projectonlytextcontainer">
+                    <p class="projecttext">
+                        <span class="projectheadercs metaverse">OVERVIEW<br/></span>
+                        <span class="projectsubheader">Reimagining Standardized Patient Examinations</span>
+                        CPX Metaverse enables medical students to practice clinical consultation, patient history taking, and differential diagnosis with AI-driven digital standardized patients in realistic virtual examination rooms.<br/><br/>
+                        <span class="projectheadercs metaverse">PUBLICATIONS &amp; IMPACT<br/></span>
+                        <span class="projectsubheader">Korean Journal of Medical Education (2026)</span>
+                        Published in the Korean Journal of Medical Education (2026) on metaverse-based Objective Structured Clinical Examinations (OSCE) and Medical Metaverse Society oral presentation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Project Navigation -->
+            <div class="sectionunderline"></div>
+            <div class="project-bottom-nav">
+                <div class="otherprojects left">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-mr-health"><span class="openarrow">← </span><span class="unhovering forward">MR Health Checkup</span></a>
+                </div>
+                <div class="otherprojects right">
+                    <a href="javascript:void(0)" class="otherprojectslink" data-target="view-xr-surgical"><span class="unhovering back">XR Surgical Simulator</span> <span class="openarrow">→</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <div class="footerleft">
+                <span class="copyrightogg">Yejin Yoon</span> © 2026<br>
+                <span class="footer_updated">Last Updated in October 🌀</span>
+            </div>
+            <div class="footerright2">
+                <a href="mailto:yoko7032@gmail.com" class="link-3">yoko7032@gmail.com</a> • 
+                <a href="yejinyoon-cv.pdf" target="_blank" class="link-3"><span class="copyrightogg">Résumé ↗</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal for Archive Items (Multi-Image Carousel Support) -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <div class="lightbox-media-wrapper">
+                <button class="lightbox-arrow prev" id="lightbox-prev" aria-label="Previous Image">‹</button>
+                <img src="" alt="" id="lightbox-img" class="lightbox-img">
+                <button class="lightbox-arrow next" id="lightbox-next" aria-label="Next Image">›</button>
+            </div>
+            <div class="lightbox-caption">
+                <div class="lightbox-meta">
+                    <span id="lightbox-category" class="lightbox-category"></span>
+                    <span id="lightbox-counter" class="lightbox-counter">1 / 1</span>
+                </div>
+                <h3 id="lightbox-title" class="lightbox-title"></h3>
+                <a id="lightbox-paper" class="lightbox-paper" href="#" target="_blank" rel="noopener" style="display:none;" onclick="event.stopPropagation()">📄 Research behind this project ↗</a>
+            </div>
+            <!-- Horizontal Bottom Thumbnail Strip -->
+            <div class="lightbox-thumbnails-container" id="lightbox-thumbnails"></div>
+        </div>
+    </div>
+
+    <script src="script.js?v=20261031e"></script>
+</body>
+
+</html>
