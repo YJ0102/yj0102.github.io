@@ -2181,3 +2181,11 @@ video.project-loop { display: block; width: 100%; height: auto; aspect-ratio: 16
     .info-photo-sticky { max-width: none; }
     .info-main-grid { margin-bottom: 48px; }
 }
+
+/* Archive video thumbnails keep their own aspect ratio (not the 16:9 hero loop rule) */
+video.imagegrid.project-loop {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+}
