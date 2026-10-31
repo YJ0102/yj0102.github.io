@@ -2221,3 +2221,11 @@ video.imagegrid.project-loop {
         font-weight: 600;
     }
 }
+
+/* Information page side margins match the rest of the site */
+@media screen and (max-width: 991px) {
+    .info-content-wrapper { margin-left: 25px; margin-right: 25px; }
+}
+@media screen and (max-width: 767px) {
+    .info-content-wrapper { margin-left: 16px; margin-right: 16px; }
+}
