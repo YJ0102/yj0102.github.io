@@ -2200,3 +2200,24 @@ video.imagegrid.project-loop {
         line-height: 1.32 !important;
     }
 }
+
+/* Mobile: lighter body text (Helvetica Neue Light on Apple devices) */
+@media screen and (max-width: 767px) {
+    .h1,
+    .h1alt,
+    .info-hero-headline,
+    .h1projecttitle,
+    .projecttext,
+    .projectdescription,
+    .info-paragraph,
+    .pubdesc,
+    .pubauthors,
+    .edu-degree,
+    .skill-category p {
+        font-weight: 300;
+    }
+    .projecttext strong,
+    .pubauthors strong {
+        font-weight: 600;
+    }
+}
