@@ -2170,3 +2170,14 @@ video.project-loop { display: block; width: 100%; height: auto; aspect-ratio: 16
     }
     .navheader.menu-open { background: #0e0e0e; }
 }
+
+/* Information on tablet/mobile: photo right after the headline, before the bio */
+@media screen and (max-width: 1024px) {
+    .info-main-grid { display: flex; flex-direction: column; gap: 32px; }
+    .info-photo-col { order: -1; width: 100%; }
+    .info-photo-sticky { position: relative; top: auto; max-width: 480px; }
+}
+@media screen and (max-width: 767px) {
+    .info-photo-sticky { max-width: none; }
+    .info-main-grid { margin-bottom: 48px; }
+}
