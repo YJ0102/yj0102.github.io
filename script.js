@@ -1090,3 +1090,21 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('popstate', () => setTimeout(syncLoops, 350));
     document.addEventListener('DOMContentLoaded', syncLoops);
 })();
+
+// Mobile menu (hamburger)
+(function () {
+    const header = document.querySelector('.navheader');
+    const btn = document.querySelector('.mobile-menu-btn');
+    if (!header || !btn) return;
+    const close = () => { header.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', 'Open menu'); };
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = !header.classList.contains('menu-open');
+        header.classList.toggle('menu-open', open);
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    document.querySelectorAll('.mobile-menu-link, .mobile-brand').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('click', (e) => { if (!header.contains(e.target)) close(); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 767) close(); });
+})();

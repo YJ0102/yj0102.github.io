@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261031i">
+    <link rel="stylesheet" href="styles.css?v=20261031j">
 </head>
 
 <body class="main">
@@ -24,6 +24,18 @@
             <a href="#" class="nav-pill nav-link" data-target="about-detail">Information</a>
             <a href="yejinyoon-cv.pdf" target="_blank" class="nav-pill nav-link">Résumé</a>
         </div>
+
+        <!-- Mobile header: name + menu button -->
+        <a href="#" class="mobile-brand nav-link" data-target="home">Yejin Yoon</a>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+            <a href="#work" class="mobile-menu-link nav-link" data-target="work">Work</a>
+            <a href="#archive" class="mobile-menu-link nav-link" data-target="archive">Archive</a>
+            <a href="#" class="mobile-menu-link nav-link" data-target="about-detail">Information</a>
+            <a href="yejinyoon-cv.pdf" target="_blank" class="mobile-menu-link nav-link">Résumé</a>
+        </nav>
     </header>
 
     <!-- Main View Scroll Container -->
@@ -1725,7 +1737,7 @@
         </div>
     </div>
 
-    <script src="script.js?v=20261031i"></script>
+    <script src="script.js?v=20261031j"></script>
 </body>
 
 </html>
