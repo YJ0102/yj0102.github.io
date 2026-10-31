@@ -273,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const paper = card.dataset.paper || '';
             const paperLabel = card.dataset.paperLabel || '';
             const videoPoster = card.dataset.videoPoster || '';
+            const withAudio = card.dataset.videoAudio === 'true';
 
             let images = [];
             if (galleryData) {
@@ -294,6 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     paperLabel: paperLabel,
                     isVideo: /\.mp4(\?|$)/i.test(src),
                     thumb: /\.mp4(\?|$)/i.test(src) ? (videoPoster || src) : src,
+                    withAudio: withAudio,
+                    poster: videoPoster,
                     cardIndex: cardIdx
                 });
             });
@@ -338,6 +341,12 @@ document.addEventListener('DOMContentLoaded', () => {
             lightboxImg.style.display = 'none';
             lightboxImg.removeAttribute('src');
             lightboxVideo.style.display = '';
+            // Full-length videos with sound: show native controls, unmuted, no loop
+            const audio = !!currentItem.withAudio;
+            lightboxVideo.controls = audio;
+            lightboxVideo.loop = !audio;
+            lightboxVideo.muted = !audio;
+            if (audio && currentItem.poster) lightboxVideo.poster = currentItem.poster; else lightboxVideo.removeAttribute('poster');
             if (lightboxVideo.getAttribute('src') !== currentItem.src) lightboxVideo.src = currentItem.src;
             lightboxVideo.play().catch(() => {});
         } else {
