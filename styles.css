@@ -1965,3 +1965,94 @@ a.additionaltitle:hover .openarrow { transform: translate(2px, -2px); }
 video.project-loop { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #141414; }
 
 .cv-actions { display: flex; align-items: center; gap: 6px; }
+
+
+/* ============================================================
+   Mobile & tablet layout                                [2026-10-31]
+   ============================================================ */
+@media screen and (max-width: 991px) {
+    /* case studies: stack image + text */
+    .project-detail-view .projectimagecontainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .project-detail-view .projectimagecontainer .imagecontainer.cs,
+    .project-detail-view .projectimagecontainer .imagecontainer.half-cs {
+        width: 100%;
+        margin: 0 0 12px 0;
+    }
+    .project-detail-view .projectimagecontainer .projecttextcontainer.centered {
+        width: 100%;
+        max-width: none;
+        margin: 8px 0 0 0;
+    }
+    .project-detail-view .onlyheadersectioncontainer:not(.breaker) {
+        justify-content: flex-start;
+    }
+    .project-detail-view .onlyheadersectioncontainer:not(.breaker) .projectonlytextcontainer {
+        width: 100%;
+        max-width: none;
+    }
+    .projectoverview {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        row-gap: 22px !important;
+    }
+    .projectoverviewcontent, .projectoverviews { overflow-wrap: anywhere; }
+}
+
+@media screen and (max-width: 767px) {
+    /* top nav */
+    .left_nav_links, .right_nav_links { gap: 6px; }
+    .nav-pill { font-size: 12px; padding: 5px 8px; }
+
+    /* detail header */
+    .view-header.sticky { gap: 12px; }
+    .back-btn { font-size: 13px; padding: 5px 9px; white-space: nowrap; flex: none; }
+    .detail-title { font-size: 0.75rem; margin-top: 0; padding-bottom: 0; text-align: right; }
+    .h1projecttitle { font-size: 1.45rem !important; line-height: 1.3; }
+    .paper-link-pill { font-size: 12.5px; margin-top: 16px; }
+    .projectoverview { padding: 20px 16px !important; gap: 18px !important; }
+    .projectoverviews { font-size: 0.85rem; }
+
+    /* section breakers */
+    .sectionheader.breaker { font-size: 1.35rem; }
+    .sectionheader.breaker.caption { font-size: 0.85rem; }
+    .projectsubheader { font-size: 1.15rem; }
+
+    /* main page rows */
+    .projecttitle { font-size: 2em; }
+    .projectdescription { font-size: 14px; }
+
+    /* publications list */
+    .pubtitle { font-size: 0.9rem; }
+
+    /* archive cards */
+    .projecttag { font-size: 0.55em; padding: 2px 7px; }
+    .projecttag_div { gap: 8px; }
+    .pinterest-col { gap: 36px; }
+
+    /* lightbox */
+    .lightbox-title { font-size: 1.15em; line-height: 1.3; padding: 0 16px; }
+    .lightbox-arrow { width: 40px; height: 40px; }
+    .lightbox-arrow.prev { left: 6px; }
+    .lightbox-arrow.next { right: 6px; }
+
+    /* information */
+    .education-grid { grid-template-columns: 1fr; gap: 16px; }
+    .info-hero-headline { font-size: 1.45rem !important; line-height: 1.35; }
+    .cv-actions { flex-wrap: wrap; gap: 10px; }
+    .secondary-email-link { margin-left: 0; }
+}
+
+@media screen and (max-width: 767px) {
+    /* hero: let the intro text take its natural height instead of being covered */
+    .hero-panel {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        padding-top: 72px;
+        padding-bottom: 28px;
+        margin-bottom: 8px;
+        gap: 28px;
+    }
+}

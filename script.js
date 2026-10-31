@@ -158,6 +158,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateHeroScrollBlur() {
         if (currentView !== 'main' || !heroText) return;
 
+        // Mobile: hero is not sticky, so skip the overlap blur entirely
+        if (window.innerWidth <= 767) {
+            heroText.style.filter = 'none';
+            heroText.style.opacity = '1';
+            if (scrollArrow) scrollArrow.style.opacity = '1';
+            return;
+        }
+
         const workSection = document.getElementById('work');
         if (!workSection) return;
 
@@ -256,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function buildMasterArchiveItems() {
         masterArchiveItems = [];
-        const allCards = document.querySelectorAll('.archive-card');
+        const allCards = (window.__archiveCards && window.__archiveCards.length) ? window.__archiveCards : document.querySelectorAll('.archive-card');
         allCards.forEach((card, cardIdx) => {
             const galleryData = card.dataset.gallery;
             const imgSrc = card.dataset.img;
@@ -459,31 +467,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- True 3-Column Masonry Distribution (Equal 3 Columns, Zero Row Height Gap) ---
+    // --- Responsive Masonry Distribution (3 / 2 / 1 columns) ---
+    const archiveGridEl = document.querySelector('.pinterestgrid');
+    window.__archiveCards = archiveGridEl ? Array.from(archiveGridEl.querySelectorAll('.archive-card')) : [];
+    let masonryCols = 0;
+    function masonryColCount() {
+        const w = window.innerWidth;
+        return w <= 600 ? 1 : (w <= 991 ? 2 : 3);
+    }
     function initMasonry3Columns() {
-        const grid = document.querySelector('.pinterestgrid');
-        if (!grid) return;
-
-        const cards = Array.from(grid.querySelectorAll('.archive-card'));
-        if (cards.length === 0) return;
+        const grid = archiveGridEl;
+        const cards = window.__archiveCards;
+        if (!grid || cards.length === 0) return;
+        const colCount = masonryColCount();
+        if (colCount === masonryCols) return;
+        masonryCols = colCount;
 
         grid.innerHTML = '';
-        const colCount = 3;
         const cols = [];
-
         for (let i = 0; i < colCount; i++) {
             const col = document.createElement('div');
             col.className = 'pinterest-col';
             grid.appendChild(col);
             cols.push(col);
         }
-
         cards.forEach((card, index) => {
             cols[index % colCount].appendChild(card);
         });
     }
 
     initMasonry3Columns();
+    let masonryTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(masonryTimer);
+        masonryTimer = setTimeout(initMasonry3Columns, 150);
+    });
 
     // --- Automatic Continuous Image Slideshow for Multi-Image Cards (Full Color, Auto-Rotation) ---
     if (archiveCards) {
