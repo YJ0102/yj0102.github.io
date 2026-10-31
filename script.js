@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: link.dataset.title || '',
                 category: link.dataset.category || '',
                 paper: link.dataset.poster,
-                paperLabel: 'Open full-size poster ↗'
+                paperLabel: link.dataset.paperLabel || 'Open full-size poster ↗'
             }];
             masterGalleryIndex = 0;
             lightboxModal.classList.add('poster-mode');
