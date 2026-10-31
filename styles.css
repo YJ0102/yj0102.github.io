@@ -2189,3 +2189,14 @@ video.imagegrid.project-loop {
     object-fit: contain;
     background: transparent;
 }
+
+/* Mobile headline size matched to reference (~21px) */
+@media screen and (max-width: 767px) {
+    .h1,
+    .h1alt,
+    .info-hero-headline,
+    .h1projecttitle {
+        font-size: 21px !important;
+        line-height: 1.32 !important;
+    }
+}
