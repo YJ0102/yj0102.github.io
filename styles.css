@@ -2229,3 +2229,19 @@ video.imagegrid.project-loop {
 @media screen and (max-width: 767px) {
     .info-content-wrapper { margin-left: 16px; margin-right: 16px; }
 }
+
+
+/* ============================================================
+   Side-by-side images at equal height, no cropping       [2026-10-31]
+   Each column's width is proportional to its image aspect ratio (--ar = w/h)
+   ============================================================ */
+@media screen and (min-width: 992px) {
+    .project-detail-view .projectimagecontainer.ratio-row {
+        align-items: flex-start;
+    }
+    .project-detail-view .projectimagecontainer.ratio-row > .imagecontainer.half-cs {
+        width: auto;
+        flex: var(--ar, 1) 1 0;
+        min-width: 0;
+    }
+}
