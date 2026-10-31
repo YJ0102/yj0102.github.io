@@ -264,6 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = card.dataset.category || '';
             const paper = card.dataset.paper || '';
             const paperLabel = card.dataset.paperLabel || '';
+            const videoPoster = card.dataset.videoPoster || '';
 
             let images = [];
             if (galleryData) {
@@ -283,6 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     category: category,
                     paper: paper,
                     paperLabel: paperLabel,
+                    isVideo: /\.mp4(\?|$)/i.test(src),
+                    thumb: /\.mp4(\?|$)/i.test(src) ? (videoPoster || src) : src,
                     cardIndex: cardIdx
                 });
             });
@@ -302,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         masterArchiveItems.forEach((item, idx) => {
             const thumb = document.createElement('img');
-            thumb.src = item.src;
+            thumb.src = item.thumb || item.src;
             thumb.alt = item.title || `Thumbnail ${idx + 1}`;
             thumb.className = `lightbox-thumb ${idx === masterGalleryIndex ? 'active' : ''}`;
             if (idx > 0 && item.cardIndex !== masterArchiveItems[idx - 1].cardIndex) thumb.classList.add('group-start');
@@ -322,7 +325,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentItem = masterArchiveItems[masterGalleryIndex];
         if (!currentItem) return;
 
-        lightboxImg.src = currentItem.src;
+        const lightboxVideo = document.getElementById('lightbox-video');
+        if (currentItem.isVideo && lightboxVideo) {
+            lightboxImg.style.display = 'none';
+            lightboxImg.removeAttribute('src');
+            lightboxVideo.style.display = '';
+            if (lightboxVideo.getAttribute('src') !== currentItem.src) lightboxVideo.src = currentItem.src;
+            lightboxVideo.play().catch(() => {});
+        } else {
+            if (lightboxVideo) { lightboxVideo.pause(); lightboxVideo.style.display = 'none'; }
+            lightboxImg.style.display = '';
+            lightboxImg.src = currentItem.src;
+        }
         if (lightboxTitle) lightboxTitle.textContent = currentItem.title;
         if (lightboxCategory) lightboxCategory.textContent = currentItem.category;
         if (lightboxPaper) {
@@ -421,6 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lightboxClose) {
             lightboxClose.addEventListener('click', () => {
                 lightboxModal.classList.remove('active');
+                const lv = document.getElementById('lightbox-video'); if (lv) lv.pause();
             });
         }
 
