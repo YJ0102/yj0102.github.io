@@ -2384,3 +2384,10 @@ video.imagegrid.project-loop {
     .impact-big { font-size: 1.35rem; }
     .obs-row, .case-result { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* Problem cards: spell out "Problem N" on its own line            [2026-11-02] */
+.problem-id {
+    display: block;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+}
