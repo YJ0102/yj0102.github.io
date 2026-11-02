@@ -2391,3 +2391,16 @@ video.imagegrid.project-loop {
     margin: 0 0 4px 0;
     text-transform: uppercase;
 }
+
+/* Detail pages: 5-column metadata (Timeline / Role / For / With / Outcomes)   [2026-11-02] */
+@media screen and (min-width: 992px) {
+    .project-detail-view .projectoverview {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        gap: 28px !important;
+    }
+}
+.outcomes-col .outcome-item { display: block; }
+.outcomes-col .outcome-item + .outcome-item { margin-top: 8px; }
+@media screen and (max-width: 991px) {
+    .project-detail-view .projectoverview .outcomes-col { grid-column: 1 / -1; }
+}
