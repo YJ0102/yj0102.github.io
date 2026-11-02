@@ -1117,3 +1117,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => { if (!header.contains(e.target)) close(); });
     window.addEventListener('resize', () => { if (window.innerWidth > 767) close(); });
 })();
+
+
+// Stage interaction clips: load and play only while on screen      [2026-11-02]
+(function () {
+    const clips = () => document.querySelectorAll('video.clip-video');
+    if (!('IntersectionObserver' in window)) {
+        document.addEventListener('DOMContentLoaded', () => clips().forEach(v => { v.preload = 'metadata'; v.play().catch(() => {}); }));
+        return;
+    }
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            const v = e.target;
+            if (e.isIntersecting && v.offsetParent !== null) { v.play().catch(() => {}); }
+            else if (!v.paused) { v.pause(); }
+        });
+    }, { threshold: 0.35 });
+    document.addEventListener('DOMContentLoaded', () => clips().forEach(v => io.observe(v)));
+})();

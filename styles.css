@@ -2404,3 +2404,33 @@ video.imagegrid.project-loop {
 @media screen and (max-width: 991px) {
     .project-detail-view .projectoverview .outcomes-col { grid-column: 1 / -1; }
 }
+
+
+/* Interaction clips beside stages                                  [2026-11-02] */
+.stage-clip { margin: 16px 0 0; }
+.stage-clip video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #000;
+}
+.stage-clip figcaption {
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+.clip-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+.clip-pair .stage-clip { margin: 0; }
+.clip-row { padding-top: 0 !important; }
+.clip-row .stage-clip { margin: 0; }
+@media screen and (max-width: 600px) {
+    .clip-pair { grid-template-columns: 1fr; }
+}
