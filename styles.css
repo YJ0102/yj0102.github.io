@@ -2245,3 +2245,142 @@ video.imagegrid.project-loop {
         min-width: 0;
     }
 }
+
+
+/* ============================================================
+   Case-study structure: impact strip, problem cards,
+   ADDRESSES / RESULT tags, observed → change rows     [2026-11-02]
+   ============================================================ */
+#view-xr-surgical { --accent: #81a7ff; }
+#view-mr-physician { --accent: #a293eb; }
+#view-mr-health { --accent: #57c7c2; }
+
+.impact-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    padding: 28px 50px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.impact-item { min-width: 0; }
+.impact-big {
+    display: block;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+.impact-small {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.problem-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+.problem-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px 15px;
+    background: rgba(255, 255, 255, 0.025);
+}
+.problem-id {
+    color: var(--accent, #81a7ff);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-right: 8px;
+}
+.problem-title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.problem-desc {
+    display: block;
+    margin-top: 4px;
+    color: #d6d6d6;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.problem-evidence {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.problem-evidence a { color: rgba(255, 255, 255, 0.6); }
+
+.case-tag-row {
+    display: block;
+    margin: -6px 0 14px;
+}
+.case-tag {
+    display: inline-block;
+    color: var(--accent, #81a7ff);
+    border: 0.75px solid currentColor;
+    border-radius: 10px;
+    padding: 2px 9px;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.case-label {
+    color: var(--accent, #81a7ff);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-top: 0.42em;
+    line-height: 1.4;
+}
+.obs-row {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+.obs-row.change { margin-top: 4px; }
+.obs-row.change > span:last-child { color: #ffffff; }
+.obs-row.spaced { margin-top: 18px; }
+.case-result {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.projecttag.status {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #111111 !important;
+    border-color: transparent !important;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+    .impact-strip { gap: 24px; padding: 24px 32px 26px; }
+    .impact-big { font-size: 1.45rem; }
+}
+@media screen and (max-width: 767px) {
+    .impact-strip {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 22px 16px 24px;
+    }
+    .impact-big { font-size: 1.35rem; }
+    .obs-row, .case-result { grid-template-columns: 1fr; gap: 2px; }
+}
