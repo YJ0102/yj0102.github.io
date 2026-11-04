@@ -2522,3 +2522,28 @@ video.imagegrid.project-loop {
 .subsims-chevron { font-size: 13px; }
 .subsims-wrap[open] .subsims-chevron { transform: rotate(180deg); }
 .subsims-wrap[open] > summary { margin-bottom: 6px; }
+
+
+/* Role lines on home cards and Additional Work                     [2026-11-04] */
+.role-label {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--lightgrey);
+}
+.projectrole {
+    margin-top: 12px;
+    font-family: var(--font-sans);
+    font-size: 0.74em;
+    line-height: 1.5;
+    color: #e8e8e8;
+}
+.pubrole {
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    max-width: 720px;
+}
