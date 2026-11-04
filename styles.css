@@ -2459,3 +2459,40 @@ video.imagegrid.project-loop {
 @media screen and (max-width: 767px) {
     .subsims li { grid-template-columns: 1fr; gap: 2px; }
 }
+
+
+/* Grouped simulators: collapsible details                           [2026-11-04] */
+.subsims-wrap { max-width: 720px; margin-top: 2px; }
+.subsims-wrap > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 6px 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+.subsims-wrap > summary::-webkit-details-marker { display: none; }
+.subsims-names { color: var(--white); }
+.subsims-toggle {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--lightgrey);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+.subsims-chevron { display: inline-block; transition: transform 0.2s ease; font-size: 1rem; line-height: 1; }
+.subsims-wrap[open] .subsims-chevron { transform: rotate(90deg); }
+.subsims-wrap .when-open { display: none; }
+.subsims-wrap[open] .when-open { display: inline; }
+.subsims-wrap[open] .when-closed { display: none; }
+.subsims-wrap > summary:hover .subsims-toggle { color: var(--white); }
+.subsims-wrap .subsims { margin-top: 4px; }
+@media screen and (max-width: 767px) {
+    .subsims-wrap > summary { flex-direction: column; gap: 4px; }
+}
