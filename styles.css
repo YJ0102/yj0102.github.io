@@ -2434,3 +2434,28 @@ video.imagegrid.project-loop {
 @media screen and (max-width: 600px) {
     .clip-pair { grid-template-columns: 1fr; }
 }
+
+
+/* Additional Work: grouped simulators                               [2026-11-04] */
+.subsims {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 0;
+    max-width: 720px;
+    border-top: 1px solid var(--line-color);
+}
+.subsims li {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    gap: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line-color);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+.subsims li:last-child { border-bottom: none; }
+.subsim-name { color: var(--white); }
+.subsim-meta { color: var(--lightgrey); }
+@media screen and (max-width: 767px) {
+    .subsims li { grid-template-columns: 1fr; gap: 2px; }
+}
